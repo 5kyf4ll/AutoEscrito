@@ -1,21 +1,3 @@
-import time
-import keyboard
-
-# Ruta del archivo de texto
-
-ruta_txt = "Ejemplo.txt"
-
-print("Iniciando...")
-for i in range(5, 0, -1):
-    print(f"{i}...")
-    time.sleep(1)
-
-with open(ruta_txt, "r", encoding="utf-8") as archivo:
-    contenido = archivo.read()
-
-time.sleep(0.5)
-
-i = 0
 while i < len(contenido):
     if contenido[i] == ' ':
         count = 1
